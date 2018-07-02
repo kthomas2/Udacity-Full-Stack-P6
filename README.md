@@ -130,9 +130,9 @@ sudo git clone https://github.com/kthomas2/Udacity-Full-Stack-P4.git catalog
 sudo chown -R grader:grader /var/www/catalog
 ```
 
-* Update database connection in database_setup.py, lotsofitems.py and application py to connect to postgreSQL instead of SQL
+* Update database connection in database_setup.py, lotsofitems.py and application.py to connect to PostgreSQL instead of SQL
 ```
-engine = create_engine('postgresql://catalog:db_password@localhost/catalog')
+engine = create_engine('postgresql://catalog:XXXXX@localhost/catalog')
 ```
 
 * Install software
@@ -233,27 +233,22 @@ PermitRootLogin no
 ### Resources
 Listed below are some of the resources I referenced. This project was difficult and required much googling. I captured a number of the significant sites that I utilized to complete this project, although there were many others that I reviewed.
 
-Udacity courses and quizzes -  Linux, Databases, Python
-https://www.postgresql.org/
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html#TroubleshootingInstancesConnectingMindTerm
-https://stackoverflow.com/questions/47342988/aws-ssh-port-timeout-after-changing-port-number
-https://forums.aws.amazon.com/thread.jspa?threadID=160352
-https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-14-04
-https://forums.aws.amazon.com/thread.jspa?threadID=244253
-http://docs.sqlalchemy.org/en/latest/core/engines.html
-https://www.postgresql.org/docs/8.0/static/sql-createuser.html
-https://www.postgresql.org/docs/8.0/static/sql-createdatabase.html
-https://www.postgresql.org/docs/8.0/static/sql-revoke.html
-https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
-https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
-https://github.com/bencam/linux-server-configuration
-http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/
-https://askubuntu.com/questions/603451/why-am-i-getting-the-apache2-ubuntu-default-page-instead-of-my-own-index-html-pa
-https://www.pythonanywhere.com/forums/topic/4200/
-http://swaroopsm.github.io/12-02-2012-Deploying-Python-Flask-on-Apache-using-mod_wsgi.html
-https://mediatemple.net/community/products/dv/204643810/how-do-i-disable-ssh-login-for-the-root-user
-
-
-
-
-
+- Udacity courses and quizzes -  Linux, Databases, Python
+- https://www.postgresql.org/
+- https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html#TroubleshootingInstancesConnectingMindTerm
+- https://stackoverflow.com/questions/47342988/aws-ssh-port-timeout-after-changing-port-number
+- https://forums.aws.amazon.com/thread.jspa?threadID=160352
+- https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-14-04
+- https://forums.aws.amazon.com/thread.jspa?threadID=244253
+- http://docs.sqlalchemy.org/en/latest/core/engines.html
+- https://www.postgresql.org/docs/8.0/static/sql-createuser.html
+- https://www.postgresql.org/docs/8.0/static/sql-createdatabase.html
+- https://www.postgresql.org/docs/8.0/static/sql-revoke.html
+- https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+- https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+- https://github.com/bencam/linux-server-configuration
+- http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/
+- https://askubuntu.com/questions/603451/why-am-i-getting-the-apache2-ubuntu-default-page-instead-of-my-own-index-html-pa
+- https://www.pythonanywhere.com/forums/topic/4200/
+- http://swaroopsm.github.io/12-02-2012-Deploying-Python-Flask-on-Apache-using-mod_wsgi.html
+- https://mediatemple.net/community/products/dv/204643810/how-do-i-disable-ssh-login-for-the-root-user
