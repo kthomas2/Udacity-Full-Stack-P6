@@ -248,6 +248,7 @@ Listed below are some of the resources I referenced. This project was difficult 
 - https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 - https://github.com/bencam/linux-server-configuration
 - http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/
+- http://www.codeasite.com/index.php/linux-a-apache/94-how-do-i-find-apache-http-server-log
 - https://askubuntu.com/questions/603451/why-am-i-getting-the-apache2-ubuntu-default-page-instead-of-my-own-index-html-pa
 - https://www.pythonanywhere.com/forums/topic/4200/
 - http://swaroopsm.github.io/12-02-2012-Deploying-Python-Flask-on-Apache-using-mod_wsgi.html
