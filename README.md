@@ -28,13 +28,13 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-* Configure Amazon Lightsail firewall on the Networking tab. Add two custom firewall rules
+* Configure Amazon Lightsail firewall on the Networking tab. Add two custom firewall rules.
 ```
 Custom TCP 2200
 Custom UDP 123
 ```
 
-* Change SSH port from 22 to 2200 and restart the service log back in
+* Change SSH port from 22 to 2200, restart the service and log back in
 ```
 sudo nano /etc/ssh/sshd_config
 port 2200
@@ -61,10 +61,11 @@ sudo adduser grader
 * Grant sudo permissions to grader. Copy 90-cloud-init-users as grader and edit file changing ubuntu to grader
 ```
 sudo cp /etc/sudoers.d/90-cloud-init-users /etc/sudoers.d/grader
+sudo nano /etc/sudoers.d/grader
 grader ALL=(ALL) NOPASSWD:ALL
 ```
 
-* Key based authentication. Generate key on local machine called grader_key. Make .ssh director for grader. Create a new file call authorized-keys and copy key from grader_key.pub into .ssh/authorized-keys
+* Generate key on local machine. Make .ssh directory for grader. Create a new file call authorized-keys and copy key from grader_key.pub into .ssh/authorized-keys
 ```
 ssh-keygen
 sudo mkdir /home/grader/.ssh
@@ -79,7 +80,7 @@ sudo chmod 644 /home/grader/.ssh/authorized_keys
 sudo chown -R grader:grader /home/grader/.ssh
 ```
 
-* Login with keypair
+* Login with key pair
 ```
 ssh -i c:/users/xxxx/.ssh/grader_key grader@18.222.167.4
 ```
@@ -106,11 +107,11 @@ sudo nano /etc/postgresql/9.5/main/pg_hba.conf
 sudo adduser catalog
 ```
 
-* Connect to psql create postgresql user - catalog. Restrict database permissions.
+* Connect to psql and create PostgreSQL user - catalog. Restrict database permissions.
 ```
 sudo su - postgres
 psql
-CREATE USER catalog WITH PASSWORD 'udacity' CREATEDB; 'password';  
+CREATE USER catalog WITH PASSWORD 'xxxxxx' CREATEDB; 'password';  
 CREATE DATABASE catalog WITH OWNER catalog;  
 \c catalog
 REVOKE ALL ON SCHEMA public FROM public;  
@@ -118,7 +119,7 @@ GRANT ALL ON SCHEMA public TO catalog;
 ```
 
 * Install GIT
-''
+```
 sudo apt-get install git
 ```
 
