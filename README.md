@@ -1,6 +1,6 @@
 ## Linux Server Configuration Project
 
-###Udacity - Full Stack Web Developer Nanodegree###
+### Udacity - Full Stack Web Developer Nanodegree ###
 
 Project 6: Configure an Amazon Lightsail Linux server instance to host web applications. Steps include securing the server from a number of attack vectors, installing and configuring a database server, and deployment of a web application.
 
