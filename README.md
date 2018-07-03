@@ -45,6 +45,12 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
+* Install and enable automatic updates 
+```
+sudo apt-get install unattended-upgrades.
+sudo dpkg-reconfigure --priority=low unattended-upgrades.
+```
+
 * Configure Amazon Lightsail firewall on the Networking tab. Add two custom firewall rules.
 ```
 Custom TCP 2200
@@ -275,4 +281,6 @@ Listed below are some of the resources I referenced. This project was difficult 
 - https://www.pythonanywhere.com/forums/topic/4200/
 - http://swaroopsm.github.io/12-02-2012-Deploying-Python-Flask-on-Apache-using-mod_wsgi.html
 - https://mediatemple.net/community/products/dv/204643810/how-do-i-disable-ssh-login-for-the-root-user
-https://askubuntu.com/questions/449364/what-does-without-password-mean-in-sshd-config-file
+- https://askubuntu.com/questions/449364/what-does-without-password-mean-in-sshd-config-file
+- https://help.ubuntu.com/community/AutomaticSecurityUpdates
+- https://serverfault.com/questions/262751/update-ubuntu-10-04/262773#262773
