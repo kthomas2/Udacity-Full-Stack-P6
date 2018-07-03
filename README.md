@@ -50,6 +50,10 @@ sudo apt-get upgrade
 Custom TCP 2200
 Custom UDP 123
 ```
+* Configure Amazon Lightsail firewall on the Networking tab. Remove SSH port 22.
+```
+SSH TCP 22
+```
 
 * Change SSH port from 22 to 2200, restart the service and log back in
 ```
@@ -68,6 +72,7 @@ sudo ufw allow 2200/tcp
 sudo ufw allow www
 sudo ufw allow 123/ntp
 sudo ufw enable
+sudo ufw deny 22
 ```
 
 * Add new user grader
