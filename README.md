@@ -13,6 +13,23 @@ Project 6: Configure an Amazon Lightsail Linux server instance to host web appli
 - **Project URL:** http://ec2-18-222-167-4.us-east-2.compute.amazonaws.com
 
 
+### Software Installed
+- Apache2
+- mod-wsgi
+- PostgreSQL
+- GIT
+- Python
+- pip
+- flask
+- oauth2client
+- httplib2
+- SQLAlchemy
+- pyscopg2
+- requests
+- virtualenv
+
+
+
 ### Configuration Summary
 
 * Setup new Ubuntu Linux server instance on Amazon Lightsail per web site instructions.
